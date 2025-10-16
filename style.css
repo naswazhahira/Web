@@ -9,7 +9,7 @@
     font-family: "Poppins", sans-serif;
 }
 :root {
-    /* --bg-color: #080808; */
+     /* --bg-solid: ;  */
     --bg-color: linear-gradient(to right, #4F1C51, #210F37);
     --second-bg-color: #67246a;
     --text-color: white;
@@ -185,7 +185,7 @@ span{
 
 .text-animation span::after{
     content: "";
-    background-color: var(--bg-color);
+    background-color: rgba(255, 255, 255, 0.1); /* sedikit bayangan */
     position: absolute;
     width: calc(100% + 8px);
     height: 100%;
@@ -904,6 +904,34 @@ span{
     border: 5px solid var(--main-color);
     transform: scale(1.03);
     box-shadow: 0 0 25px var(--main-color);
+}
+
+.build-box5 {
+    background-color: var(--second-bg-color);
+    height: 620px;
+    width: 850px;
+    border-radius: 3rem;
+    border: 5px solid transparent;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+    padding: 20px;
+}
+
+.build-box5:hover{
+    background: var(--main-color);
+    color: black;
+    border: 5px solid var(--main-color);
+    transform: scale(1.03);
+    box-shadow: 0 0 25px var(--main-color);
+}
+
+.build-info h3{
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 1.5;
+    color: var(--bg-color);
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 .footer {
